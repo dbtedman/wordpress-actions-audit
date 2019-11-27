@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "_prettier": "prettier './{**/,/}*.{js,md,yml,yaml,json}'",
-    "format": "yarn _prettier -- --write",
-    "lint": "yarn _prettier -- --check"
+    "format": "yarn _prettier --write",
+    "lint": "yarn _prettier --check"
   },
   "devDependencies": {
     "husky": "3.0.4",
