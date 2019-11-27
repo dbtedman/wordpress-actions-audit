@@ -1,14 +1,15 @@
 # [WordPress Actions Audit](https://github.com/dbtedman/wordpress-actions-audit)
 
-[![Known Vulnerabilities](https://snyk.io/test/github/dbtedman/wordpress-actions-audit/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dbtedman/wordpress-actions-audit?targetFile=package.json)
-[![Maintainability](https://api.codeclimate.com/v1/badges/a4cfb62fb725f6043038/maintainability)](https://codeclimate.com/github/dbtedman/wordpress-actions-audit/maintainability)
+[![Codecov](https://codecov.io/gh/dbtedman/wordpress-actions-audit/branch/master/graph/badge.svg)](https://codecov.io/gh/dbtedman/wordpress-actions-audit)
 [![GitHub Actions](https://github.com/dbtedman/wordpress-actions-audit/workflows/Test/badge.svg)](https://github.com/dbtedman/wordpress-actions-audit/actions?workflow=Test)
+[![Known Vulnerabilities](https://snyk.io/test/github/dbtedman/wordpress-actions-audit/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dbtedman/wordpress-actions-audit?targetFile=package.json)
+[![Maintainability](https://api.codeclimate.com/v1/badges/665e8b774785f37fd5f5/maintainability)](https://codeclimate.com/github/dbtedman/wordpress-actions-audit/maintainability)
 
 A WordPress plugin that makes a permanent record of actions that occur on the platform for the purpose of auditing them at a later stage.
 
 ## Getting Started
 
-> Add instructions here.
+> Instructions will need to be added for installing this plugin.
 
 ## Want to lean more?
 

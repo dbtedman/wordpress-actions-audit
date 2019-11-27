@@ -43,5 +43,6 @@ jobs:
       - name: "Install"
         run: "composer install"
 
+      # TODO: Add codecov support.
       - name: "Verify"
         run: "composer run-script test"
