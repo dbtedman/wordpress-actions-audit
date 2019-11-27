@@ -1,0 +1,15 @@
+#-------------------------------------------------------------------------------
+#
+# Prettier Ignores, https://prettier.io/docs/en/ignore.html
+#
+#-------------------------------------------------------------------------------
+
+# NPM dependencies
+/node_modules/
+
+# Composer dependencies
+/vendor/
+
+# Generated code
+/yarn.lock
+/composer.lock

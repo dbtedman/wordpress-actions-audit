@@ -1,0 +1,14 @@
+{
+  "name": "wordpress-actions-audit",
+  "description": "A WordPress plugin that makes a permanent record of actions that occur on the platform for the purpose of auditing them at a later stage.",
+  "private": true,
+  "scripts": {
+    "_prettier": "prettier './{**/,/}*.{js,md,yml,yaml,json}'",
+    "format": "yarn _prettier -- --write",
+    "lint": "yarn _prettier -- --check"
+  },
+  "devDependencies": {
+    "husky": "3.0.4",
+    "prettier": "1.18.2"
+  }
+}
