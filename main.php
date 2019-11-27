@@ -13,8 +13,8 @@
 
 use WordPressActionsAudit\WordPressActionsAudit;
 
-// Load external PHP modules from composer. Modules are installed in the project
-// root and linked into the theme when docker compose runs.
+// Load external PHP modules from composer, this includes the source code for
+// this plugin and 3rd party libraries.
 include_once(__DIR__ . '/vendor/autoload.php');
 
 $plugin = new WordPressActionsAudit();
