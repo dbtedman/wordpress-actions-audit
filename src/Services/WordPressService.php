@@ -18,7 +18,7 @@ class WordPressService
     /**
      * @param $message
      */
-    public function log($message)
+    public function log($message): void
     {
         /** @noinspection ForgottenDebugOutputInspection */
         error_log($message);

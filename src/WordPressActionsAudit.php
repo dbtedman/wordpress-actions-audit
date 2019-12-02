@@ -18,7 +18,7 @@ class WordPressActionsAudit
         $this->adminUserActions = new AdminUserActions($wordPressService);
     }
 
-    public function load()
+    public function load(): void
     {
         $this->adminUserActions->watchActions();
     }

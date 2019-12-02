@@ -19,6 +19,8 @@ Code formatting support provided by [Prettier](https://prettier.io/) and [PHP Co
 yarn format && composer run-script format
 ```
 
+Additional formatting assistance is provided by [Php Inspections ​(EA Extended)​](https://plugins.jetbrains.com/plugin/7622-php-inspections-ea-extended-) plugin during development.
+
 ## Help IDE
 
 Help IDE understand WordPress functions by downloading a copy of the source code into the `./temp/wordpress` directory so that IDE can index it.

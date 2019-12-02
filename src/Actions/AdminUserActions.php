@@ -23,7 +23,7 @@ class AdminUserActions
 
     public function watchActions(): void
     {
-        $this->wp->addAction('profile_update', 10, 1, function ($userId) {
+        $this->wp->addAction('profile_update', 10, 1, static function ($userId) {
             $timestamp = new DateTime();
             $audit = new UserUpdateAudit($timestamp);
         });
