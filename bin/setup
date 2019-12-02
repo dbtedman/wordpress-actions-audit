@@ -13,8 +13,9 @@ wp-cli core install \
   --admin_password=admin \
   --admin_email=info@example.com \
   --skip-email
+
 # Update site configuration.
-#wp-cli option update blogdescription "${ENV_LOCAL_WP_DESCRIPTION}"
+wp-cli option update blogdescription "Demo"
 wp-cli option update timezone_string "Australia/Brisbane"
 
 # Create dashboard and assign as home page.

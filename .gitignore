@@ -23,4 +23,5 @@ yarn-error.log
 # Cache
 /*.cache
 
+# Generated files
 /.temp/

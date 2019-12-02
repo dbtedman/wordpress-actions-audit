@@ -2,6 +2,7 @@
 
 -   [Continuous Integration](#continuous-integration)
 -   [Code Formatting](#code-formatting)
+-   [Help IDE](#help-ide)
 -   [Test](#test)
 -   [Integration](#integration)
 -   [Publishing](#publishing)
@@ -16,6 +17,14 @@ Code formatting support provided by [Prettier](https://prettier.io/) and [PHP Co
 
 ```bash
 yarn format && composer run-script format
+```
+
+## Help IDE
+
+Help IDE understand WordPress functions by downloading a copy of the source code into the `./temp/wordpress` directory so that IDE can index it.
+
+```bash
+./bin/help-ide
 ```
 
 ## Test

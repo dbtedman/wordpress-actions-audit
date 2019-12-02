@@ -1,0 +1,66 @@
+#!/usr/bin/env bash
+#-------------------------------------------------------------------------------
+#
+# Shared function definitions.
+#
+#-------------------------------------------------------------------------------
+
+#
+# $1 Message to print.
+#
+function success_message() {
+  printf "\e[32mSuccess:\e[39m %s\n" "${1}"
+}
+
+#
+# $1 Message to print.
+#
+function failure_message() {
+  printf "\e[31mError:\e[39m %s\n" "${1}"
+}
+
+#
+# $1 Message to print.
+#
+function info_message() {
+  printf "\e[34mInfo:\e[39m %s\n" "${1}"
+}
+
+#
+# $@ Command to execute.
+#
+function ensure() {
+  "$@"
+  local status=$?
+  if [[ ${status} -ne 0 ]]; then
+    exit ${status}
+  fi
+}
+
+#
+# $1 URL to test.
+# $2 Maximum number of tries.
+#
+function wait_for_url() {
+  SMOKE_TEST_URL="${1}"
+
+  TRIES=0
+  MAX_TRIES=$2
+
+  while [[ true ]]; do
+    if [[ "$TRIES" -ge "$MAX_TRIES" ]]; then
+      failure_message "Smoke test failed."
+      exit 1
+      break
+    fi
+
+    if curl --silent -I "${SMOKE_TEST_URL}" | grep "200 OK"; then
+      success_message "Smoke test success."
+      break
+    fi
+
+    TRIES=$((TRIES + 1))
+    echo "Waiting for site to setup... [${TRIES}/${MAX_TRIES}]"
+    sleep 2
+  done
+}

@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+#-------------------------------------------------------------------------------
+#
+# Help IDE by downloading a copy of WordPress.
+#
+#-------------------------------------------------------------------------------
+
+DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd) # Directory this script is in.
+DIR_ROOT="${DIR/\/bin/}"                          # Base directory of repository.
+DIR_CURRENT=$(pwd)
+
+cd "${DIR}" || exit
+
+source "./_functions"
+
+cd "${DIR_ROOT}" || exit
+
+TEMP_DIRECTORY="${DIR_ROOT}/.temp"
+WORDPRESS_EXTRACT_LOCATION="${TEMP_DIRECTORY}/wordpress"
+WORDPRESS_DOWNLOAD_LOCATION="${TEMP_DIRECTORY}/wordpress.zip"
+
+ensure rm -rf "${TEMP_DIRECTORY}"
+
+ensure mkdir -p "${TEMP_DIRECTORY}"
+
+ensure curl "https://wordpress.org/latest.zip" \
+  --output "${WORDPRESS_DOWNLOAD_LOCATION}"
+
+unzip "${WORDPRESS_DOWNLOAD_LOCATION}" \
+  -d "${TEMP_DIRECTORY}"
+
+rm "${WORDPRESS_DOWNLOAD_LOCATION}"
+
+success_message "WordPress has been downloaded into the ${WORDPRESS_EXTRACT_LOCATION} directory"
+
+cd "${DIR_CURRENT}" || exit
