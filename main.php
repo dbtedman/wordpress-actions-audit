@@ -18,3 +18,4 @@ use WordPressActionsAudit\WordPressActionsAudit;
 include_once(__DIR__ . '/vendor/autoload.php');
 
 $plugin = new WordPressActionsAudit();
+$plugin->load();

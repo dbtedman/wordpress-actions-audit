@@ -17,6 +17,7 @@ on:
 
 env:
   CI: true
+  CODECOV_TOKEN: "${{ secrets.CODECOV_TOKEN }}"
 
 jobs:
   test:
@@ -43,6 +44,5 @@ jobs:
       - name: "Install"
         run: "composer install"
 
-      # TODO: Add codecov support.
       - name: "Verify"
-        run: "composer run-script test"
+        run: "composer run-script test:coverage && bash <(curl -s https://codecov.io/bash)"

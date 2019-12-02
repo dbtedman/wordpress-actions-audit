@@ -13,3 +13,4 @@
 # Generated code
 /yarn.lock
 /composer.lock
+/.temp/
