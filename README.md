@@ -1,5 +1,7 @@
 # [WordPress Actions Audit](https://github.com/dbtedman/wordpress-actions-audit)
 
+> Pre-release software, not for production use.
+
 [![Codecov](https://codecov.io/gh/dbtedman/wordpress-actions-audit/branch/master/graph/badge.svg)](https://codecov.io/gh/dbtedman/wordpress-actions-audit)
 [![GitHub Actions](https://github.com/dbtedman/wordpress-actions-audit/workflows/Test/badge.svg)](https://github.com/dbtedman/wordpress-actions-audit/actions?workflow=Test)
 [![Known Vulnerabilities](https://snyk.io/test/github/dbtedman/wordpress-actions-audit/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dbtedman/wordpress-actions-audit?targetFile=package.json)
