@@ -92,4 +92,6 @@ docker exec -it \
   "actions_audit_wp" \
   /usr/local/bin/setup
 
+success_message "Now visit http://localhost:8080/"
+
 cd "${DIR_CURRENT}" || exit
