@@ -11,11 +11,13 @@
  *
  *----------------------------------------------------------------------------*/
 
+use WordPressActionsAudit\Services\Services;
 use WordPressActionsAudit\WordPressActionsAudit;
 
 // Load external PHP modules from composer, this includes the source code for
 // this plugin and 3rd party libraries.
 include_once(__DIR__ . '/vendor/autoload.php');
 
-$plugin = new WordPressActionsAudit();
+$services = new Services();
+$plugin = new WordPressActionsAudit($services);
 $plugin->load();

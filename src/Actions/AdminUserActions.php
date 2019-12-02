@@ -4,6 +4,7 @@ namespace WordPressActionsAudit\Actions;
 
 use DateTime;
 use WordPressActionsAudit\Audit\UserUpdateAudit;
+use WordPressActionsAudit\Services\Services;
 use WordPressActionsAudit\Services\WordPressService;
 
 class AdminUserActions
@@ -11,19 +12,19 @@ class AdminUserActions
     /**
      * @var WordPressService
      */
-    private $wp;
+    private $wordPressService;
 
     /**
-     * @param WordPressService $wordPressService
+     * @param Services $services
      */
-    public function __construct($wordPressService)
+    public function __construct(Services $services)
     {
-        $this->wp = $wordPressService;
+        $this->wordPressService = $services->wordPressService();
     }
 
     public function watchActions(): void
     {
-        $this->wp->addAction('profile_update', 10, 1, static function ($userId) {
+        $this->wordPressService->addAction('profile_update', 10, 1, static function ($userId) {
             $timestamp = new DateTime();
             $audit = new UserUpdateAudit($timestamp);
         });

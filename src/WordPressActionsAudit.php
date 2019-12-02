@@ -3,7 +3,7 @@
 namespace WordPressActionsAudit;
 
 use WordPressActionsAudit\Actions\AdminUserActions;
-use WordPressActionsAudit\Services\WordPressService;
+use WordPressActionsAudit\Services\Services;
 
 class WordPressActionsAudit
 {
@@ -12,10 +12,12 @@ class WordPressActionsAudit
      */
     private $adminUserActions;
 
-    public function __construct()
+    /**
+     * @param Services $services
+     */
+    public function __construct($services)
     {
-        $wordPressService = new WordPressService();
-        $this->adminUserActions = new AdminUserActions($wordPressService);
+        $this->adminUserActions = new AdminUserActions($services);
     }
 
     public function load(): void
