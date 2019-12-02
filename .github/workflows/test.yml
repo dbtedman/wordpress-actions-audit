@@ -45,4 +45,7 @@ jobs:
         run: "composer install"
 
       - name: "Verify"
-        run: "composer run-script test:coverage && bash <(curl -s https://codecov.io/bash)"
+        run: "composer run-script test:coverage"
+
+      - name: "Collect Coverage"
+        run: "bash <(curl -s https://codecov.io/bash)"
