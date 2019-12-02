@@ -2,7 +2,7 @@
 
 namespace WordPressActionsAudit;
 
-use WordPressActionsAudit\Actions\AdminUserActions;
+use WordPressActionsAudit\Core\Actions\AdminUserActions;
 use WordPressActionsAudit\Services\Services;
 
 class WordPressActionsAudit
@@ -15,7 +15,7 @@ class WordPressActionsAudit
     /**
      * @param Services $services
      */
-    public function __construct($services)
+    public function __construct(Services $services)
     {
         $this->adminUserActions = new AdminUserActions($services);
     }

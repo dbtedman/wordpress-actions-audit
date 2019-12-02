@@ -1,9 +1,9 @@
 <?php
 
-namespace WordPressActionsAudit\Actions;
+namespace WordPressActionsAudit\Core\Actions;
 
 use DateTime;
-use WordPressActionsAudit\Audit\UserUpdateAudit;
+use WordPressActionsAudit\Core\Audit\UserUpdateAudit;
 use WordPressActionsAudit\Services\Services;
 use WordPressActionsAudit\Services\WordPressService;
 

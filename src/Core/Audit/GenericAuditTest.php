@@ -1,6 +1,6 @@
 <?php
 
-namespace WordPressActionsAudit\Audit;
+namespace WordPressActionsAudit\Core\Audit;
 
 use DateTime;
 use PHPUnit\Framework\TestCase;

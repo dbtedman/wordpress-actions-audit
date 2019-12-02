@@ -1,6 +1,6 @@
 <?php
 
-namespace WordPressActionsAudit\Actions;
+namespace WordPressActionsAudit\Core\Actions;
 
 use PHPUnit\Framework\TestCase;
 use WordPressActionsAudit\Services\Services;

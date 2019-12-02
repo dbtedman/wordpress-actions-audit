@@ -1,6 +1,6 @@
 <?php
 
-namespace WordPressActionsAudit\Audit;
+namespace WordPressActionsAudit\Core\Audit;
 
 class UserUpdateAudit extends GenericAudit
 {
