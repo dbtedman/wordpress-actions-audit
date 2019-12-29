@@ -16,7 +16,7 @@ Provided by [GitHub Actions](https://github.com/dbtedman/wordpress-actions-audit
 Code formatting support provided by [Prettier](https://prettier.io/) and [PHP Code Sniffer](https://github.com/squizlabs/PHP_CodeSniffer).
 
 ```bash
-yarn format && composer run-script format
+yarn format && composer run format
 ```
 
 Additional formatting assistance is provided by [Php Inspections ​(EA Extended)​](https://plugins.jetbrains.com/plugin/7622-php-inspections-ea-extended-) plugin during development.
@@ -34,7 +34,7 @@ Help IDE understand WordPress functions by downloading a copy of the source code
 Tested using [PHPUnit](https://phpunit.de/), using test cases defined in the `src/` directory matching `*Test.php` pattern.
 
 ```bash
-composer run-script test
+composer run test
 ```
 
 ## Integration
