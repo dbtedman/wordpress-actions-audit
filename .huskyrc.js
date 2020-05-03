@@ -6,7 +6,6 @@
 
 module.exports = {
   hooks: {
-    "pre-commit":
-      "npm run format && composer run-script format && composer run-script test"
+    "pre-commit": "./bin/format && ./bin/test"
   }
 };

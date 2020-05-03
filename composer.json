@@ -5,12 +5,12 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "WordPressActionsAudit\\": "src/"
+      "WordPressActionsAudit\\": "php/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "WordPressActionsAudit\\": "src/"
+      "WordPressActionsAudit\\": "php/"
     }
   },
   "require": {

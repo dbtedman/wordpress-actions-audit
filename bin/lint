@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#-------------------------------------------------------------------------------
+#
+# Lint
+#
+#-------------------------------------------------------------------------------
+
+DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
+DIR_ROOT="${DIR/\/bin/}"
+DIR_CURRENT=$(pwd)
+
+cd "${DIR}" || exit
+
+source "./_functions"
+
+cd "${DIR_ROOT}" || exit
+
+yarn lint
+
+composer run lint
+
+cd "${DIR_CURRENT}" || exit

@@ -3,7 +3,7 @@
          xsi:noNamespaceSchemaLocation="./vendor/phpunit/phpunit/phpunit.xsd"
          backupGlobals="false"
          backupStaticAttributes="false"
-         bootstrap="vendor/autoload.php"
+         bootstrap="php/TestSupport/autoload.php"
          colors="true"
          convertErrorsToExceptions="true"
          convertNoticesToExceptions="true"
@@ -12,12 +12,12 @@
          stopOnFailure="false">
     <testsuites>
         <testsuite name="Unit">
-            <directory suffix="Test.php">./src</directory>
+            <directory suffix="Test.php">./php</directory>
         </testsuite>
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">./src</directory>
+            <directory suffix=".php">./php</directory>
         </whitelist>
     </filter>
 </phpunit>

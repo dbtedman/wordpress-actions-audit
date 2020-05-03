@@ -1,9 +1,10 @@
 <?php
+declare(strict_types=1);
 
 namespace WordPressActionsAudit;
 
 use WordPressActionsAudit\Core\Actions\AdminUserActions;
-use WordPressActionsAudit\Interfaces\admin\SettingsInterface;
+use WordPressActionsAudit\Ports\Web\Admin\SettingsInterface;
 use WordPressActionsAudit\Services\Services;
 
 class WordPressActionsAudit
