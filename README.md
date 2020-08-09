@@ -1,11 +1,6 @@
 # [WordPress Actions Audit](https://github.com/dbtedman/wordpress-actions-audit)
 
-> Pre-release software, not for production use.
-
-[![Codecov](https://codecov.io/gh/dbtedman/wordpress-actions-audit/branch/master/graph/badge.svg)](https://codecov.io/gh/dbtedman/wordpress-actions-audit)
-[![GitHub Actions](https://github.com/dbtedman/wordpress-actions-audit/workflows/Test/badge.svg)](https://github.com/dbtedman/wordpress-actions-audit/actions?workflow=Test)
-[![Known Vulnerabilities](https://snyk.io/test/github/dbtedman/wordpress-actions-audit/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dbtedman/wordpress-actions-audit?targetFile=package.json)
-[![Maintainability](https://api.codeclimate.com/v1/badges/665e8b774785f37fd5f5/maintainability)](https://codeclimate.com/github/dbtedman/wordpress-actions-audit/maintainability)
+> IMPORTANT: This project is no longer maintained.
 
 A WordPress plugin that makes a permanent record of actions that occur on the platform for the purpose of auditing them at a later stage.
 
